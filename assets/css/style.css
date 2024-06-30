@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&display=swap');
+
+/* ----- VARIABLES ----- */
+:root {
+    --body-color: #f8edcd;
+    --text-color-third: #4d44be;
+    --primary-color: #642282;
+    --hover-color: #ff9595;
+}
+
+/* ----- BASE STYLES ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----- ICON STYLES ----- */
+i {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* ----- BODY STYLES ----- */
+body {
+    background: var(--body-color);
+}
+
+/* ----- CONTAINER STYLES ----- */
+.container {
+    width: 100%;
+    position: relative;
+}
+
+/* ----- NAVIGATION BAR STYLES ----- */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background: var(--body-color);
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100;
+}
+
+/* ----- LOGO STYLES ----- */
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container i {
+    padding-right: 20px;
+    font-size: 25px;
+    color: var(--text-color-third);
+}
+
+.logo-container p {
+    color: var(--text-color-third);
+    padding-right: 4px;
+}
+
+/* ----- NAVIGATION MENU STYLES ----- */
+.navigation,
+.nav-list {
+    display: flex;
+}
+
+.navigation .nav-item {
+    list-style: none;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color-third);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+
+/* ----- MENU ICON STYLES ----- */
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ----- ACTIVE LINK STYLES ----- */
+.active {
+    position: relative;
+    color: var(--hover-color);
+    transition: .3;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* ----- FORM STYLES ----- */
+form {
+    padding-top: 3px;
+}
+
+.register-heading {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-container input {
+    width: 200%;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.2rem 0 0 1rem;
+    border: none;
+}
+
+/* ----- SUBMIT BUTTON STYLES ----- */
+.submit-btn {
+    width: 200%;
+    padding: 0.6rem 0;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.submit-btn:hover {
+    background-color: var(--text-color-third);
+}
+
+/* ----- SEARCH BAR STYLES ----- */
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    padding-right: 30px;
+    height: 30px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    color: var(--text-color-third);
+    transform: translateY(-50%);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/* ----- MAIN CONTENT STYLES ----- */
+.main-content {
+    padding-inline: 10vw;
+}
+
+/* ----- PROMO SECTION STYLES ----- */
+.promo {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+/* ----- PROMO CONTENT STYLES ----- */
+.promo-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    top: 20px;
+    padding-left: 20px;
+}
+
+.promo-content h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-top: -20px;
+    background-image: url("../images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: auto 45%;
+    background-position: -20px 45px;
+}
+
+/* ----- PROMO HEADING STYLES ----- */
+
+/* ----- PROMO DESCRIPTION STYLES ----- */
+
+/* ----- REGISTER SECTION STYLES ----- */
+
+
+/* ----- SOCIAL ICONS STYLES ----- */
+
+
+/* ----- PROMO IMAGE STYLES ----- */
+
+
+/* ----- ANIMATION STYLES ----- */
+
+
+/* ----- DECORATIVE IMAGE STYLES ----- */
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* ----- TABLET STYLES ----- */
+
+/* ----- MOBILE STYLES ----- */
+
+/* ----- SMALL MOBILE STYLES ----- */
+
+
+/* ----- LARGE SCREEN STYLES ----- */
